@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="image-container">
+        <img class="profile-image" [src]="selectedHero?.imagePath" [alt]="selectedHero?.name">
+    </div>
+    <!-- image-container -->
+    <div class="text-container">
+        <div class="name-contanier">
+            <h4 class="name-label">Hero Name:</h4>
+            <h4>{{selectedHero?.name}}</h4>
+        </div>
+        <!-- name-contanier -->
+        <div class="item-contanier description-container">
+            <h4 class="label">Description:</h4>
+            <p>{{selectedHero?.description}}</p>
+        </div>
+        <!-- item-contanier-->
+        <div class="item-contanier">
+            <h4 class="label">Powers:</h4>
+            <p>{{selectedHero?.powers.join(", & ")}}</p>
+        </div>
+        <!-- item-contanier -->
+    </div>
+    <!-- text-container -->
+</div>

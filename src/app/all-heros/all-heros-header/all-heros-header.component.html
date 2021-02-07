@@ -1,0 +1,13 @@
+<header>
+    <input class="search" type="search" (keyup)="onChangeSearchValue($event.target.value)"
+        placeholder="{{'search' | titlecase}}">
+    <div class="sort-options-container">
+        <label class="option">{{'sort by power' | titlecase}}</label>
+        <label class="switch">
+            <input type="checkbox" name="sort-by" (change)="onChangeSortBy($event.target.checked)">
+            <span class="slider round"></span>
+        </label>
+        <label class="option">{{'sort by rate' | titlecase}}</label>
+    </div>
+    <!-- sort-options-container -->
+</header>

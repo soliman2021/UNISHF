@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+* {
+    /* Apply Default font*/
+    font-family: arial, sans-serif;
+    /* Reset Default Browser Style*/
+    margin: 0px;
+    padding: 0px;
+}
+
+:focus {
+    /* disable outline when click on item */
+    outline: none;
+}

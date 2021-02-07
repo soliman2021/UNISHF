@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    padding-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+td,
+th {
+    min-width: 33.3%;
+    width: 33.3%;
+    max-width: 33.3%;
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to make the msg centered*/
+h3 {
+    margin: auto;
+}

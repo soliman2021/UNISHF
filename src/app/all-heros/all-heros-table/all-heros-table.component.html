@@ -1,0 +1,19 @@
+<table *ngIf="(heros | search:heroName).length">
+    <tr>
+        <th>Hero Name</th>
+        <th>Powers</th>
+        <th>Rate</th>
+    </tr>
+    <tr *ngFor=" let hero of heros | search:heroName | sortBy:sortByValue" [routerLink]="'/' + hero.id">
+        <td>{{hero.name}}</td>
+        <td>{{hero.powers}}</td>
+        <td>
+            <div class="image-container">
+                <img [src]="'./../../../assets/rating-' + hero.rate + '.png'" [alt]="hero.rate">
+            </div>
+            <!-- image-container -->
+        </td>
+    </tr>
+</table>
+
+<h3 *ngIf="!(heros | search:heroName).length">{{"no heros found!" | titlecase}}</h3>

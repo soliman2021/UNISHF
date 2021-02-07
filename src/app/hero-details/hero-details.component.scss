@@ -1,0 +1,63 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f7;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin: auto;
+    border: 2px solid #c8cfd5;
+    background-color: #fff;
+}
+
+.image-container {
+    margin: 20px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.profile-image {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.text-container {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.name-contanier {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.item-container {
+    padding: 15px 0px;
+}
+
+.description-container {
+    flex: 1;
+}
+
+h4.name-label {
+    width: 45%;
+    min-width: 45%;
+}
+
+h4.label {
+    padding: 10px 0px;
+}
